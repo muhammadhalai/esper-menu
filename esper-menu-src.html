@@ -1,0 +1,500 @@
+<meta charset="utf-8">
+<script>document.documentElement.className+=" js"</script>
+<title>Esper Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: white page, beige-led accents, sticky tab rail over one column of cards, fixed booking bar. */
+:root{
+  --white:#FFFFFF;
+  --beige:#EECFA3;
+  --beige-deep:#D9AE75;
+  --beige-wash:#FCF6EE;
+  --beige-line:#EDE1D0;
+  --green:#03472E;
+  --ink:#1E1C18;
+  --ink-soft:#6E6558;
+  --display:"Marcellus", "Hoefler Text", Georgia, serif;
+  --body:"Jost", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+
+/* With no JavaScript (a document viewer, a crawler) nothing is tabbed away:
+   the whole menu reads as one page, and the interactive controls step aside. */
+html.js [data-inactive]{display:none!important}
+html:not(.js) .tabrail,
+html:not(.js) .cardfoot,
+html:not(.js) .bar{display:none!important}
+html:not(.js) .detailbody[hidden]{display:block!important}
+html:not(.js) body{padding-bottom:24px}
+body{
+  background:var(--white);
+  color:var(--ink);
+  font-family:var(--body);
+  font-weight:300;
+  font-size:16px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:104px;
+}
+body::before{
+  content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);
+  z-index:40;background:var(--white);
+}
+.gutter{
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap{max-width:640px;margin:0 auto}
+
+/* ---------- masthead ---------- */
+.masthead{background:var(--white)}
+.masthead .wrap{padding-block:14px 12px;text-align:center}
+.masthead img{width:76px;height:auto;display:block;margin:0 auto}
+.masthead p{
+  margin:12px auto 0;max-width:32ch;font-size:14px;line-height:1.45;color:var(--ink-soft);
+}
+.whereline{
+  margin-top:12px;padding-top:11px;border-top:1px solid var(--beige-line);
+  display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;
+  font-size:11.5px;letter-spacing:.03em;color:var(--ink-soft);
+}
+.whereline span:not(:last-child)::after{content:"\00a0\00a0\00b7";color:var(--beige-deep)}
+
+/* ---------- tabs ---------- */
+.tabrail{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:30;
+  background:var(--white);border-bottom:1px solid var(--beige-line);
+}
+.xscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.xscroll::-webkit-scrollbar{display:none}
+.tabs{display:flex;gap:2px;min-width:min-content;padding-block:3px}
+.tab{
+  flex:0 0 auto;appearance:none;background:none;border:0;cursor:pointer;
+  font-family:var(--body);font-size:13px;font-weight:400;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-soft);
+  padding:14px 13px 12px;border-bottom:2px solid transparent;white-space:nowrap;
+}
+.tab[aria-selected="true"]{color:var(--green);font-weight:500;border-bottom-color:var(--beige)}
+.tab:focus-visible{outline:2px solid var(--beige-deep);outline-offset:-3px}
+
+.subrail{display:flex;gap:8px;min-width:min-content;padding-block:14px 2px}
+.subtab{
+  flex:0 0 auto;appearance:none;cursor:pointer;font-family:var(--body);font-size:13.5px;font-weight:400;
+  padding:8px 17px;border-radius:999px;border:1px solid var(--beige-line);
+  background:var(--white);color:var(--ink-soft);white-space:nowrap;
+}
+.subtab[aria-selected="true"]{background:var(--beige);border-color:var(--beige);color:var(--green);font-weight:500}
+.subtab:focus-visible{outline:2px solid var(--beige-deep);outline-offset:2px}
+
+/* ---------- section ---------- */
+.sectionhead{padding-block:18px 2px}
+.sectionhead h2{
+  font-family:var(--display);font-weight:400;font-size:26px;line-height:1.15;margin:0;
+  color:var(--green);text-wrap:balance;
+}
+.sectionhead p{margin:9px 0 0;color:var(--ink-soft);font-size:14.5px;max-width:48ch}
+.intro{
+  margin-top:18px;background:var(--beige-wash);border:1px solid var(--beige-line);
+  border-radius:3px;padding:15px 16px;font-size:13.5px;line-height:1.55;color:var(--ink-soft);
+  white-space:pre-line;
+}
+.intro strong{display:block;color:var(--green);font-weight:500;font-size:11.5px;
+  letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px}
+
+/* ---------- cards ---------- */
+.list{display:flex;flex-direction:column;gap:12px;padding-block:18px 10px}
+.seclabel{
+  display:flex;align-items:center;gap:12px;margin-top:14px;
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:500;color:var(--green);
+}
+.seclabel:first-child{margin-top:0}
+.seclabel::after{content:"";flex:1;height:1px;background:var(--beige-line)}
+.card{
+  background:var(--white);border:1px solid var(--beige-line);border-radius:3px;
+  padding:18px 16px 14px;
+}
+.card.on{border-color:var(--beige-deep);background:var(--beige-wash)}
+.toprow{display:flex;align-items:baseline;gap:12px}
+.sname{
+  font-family:var(--display);font-weight:400;font-size:19.5px;line-height:1.25;
+  margin:0;flex:1;min-width:0;color:var(--ink);
+}
+.sprice{
+  font-size:16px;font-weight:500;white-space:nowrap;color:var(--green);
+  font-variant-numeric:tabular-nums;letter-spacing:.01em;text-align:right;
+}
+.sprice .from{
+  font-size:10px;font-weight:400;color:var(--ink-soft);letter-spacing:.14em;
+  text-transform:uppercase;display:block;line-height:1;margin-bottom:3px;
+}
+.hook{margin:7px 0 0;color:var(--ink-soft);font-size:14.5px;line-height:1.5}
+
+/* v2 card: the treatment leads, the price rides on the option pills */
+.card.v2 .sname{color:var(--green);font-size:20.5px}
+.card.v2 .hook{font-size:15px;line-height:1.5;margin-top:8px}
+.card.v2 .opts{margin-top:13px}
+.opt.fixed{cursor:default;background:var(--beige-wash);border-color:var(--beige-line);color:var(--ink-soft);font-weight:400}
+.opt.fixed .dot{color:var(--beige-deep)}
+/* the price is information, not emphasis: same weight and colour as its label */
+.card.v2 .opt .amt{font-weight:400}
+.card.v2 .opt[aria-pressed="true"]{font-weight:400}
+.card.v2 .opt.fixed .amt{font-weight:400;color:var(--ink-soft)}
+.flag{
+  display:inline-block;margin-top:10px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green);background:var(--beige);border-radius:2px;padding:4px 9px;font-weight:500;
+}
+
+.opts{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.opt{
+  appearance:none;cursor:pointer;font-family:var(--body);font-size:13px;font-weight:400;
+  padding:8px 13px;border-radius:2px;border:1px solid var(--beige-line);
+  background:var(--white);color:var(--ink);font-variant-numeric:tabular-nums;text-align:left;
+}
+.opt[aria-pressed="true"]{background:var(--beige);border-color:var(--beige);font-weight:500;color:var(--green)}
+.opt .amt{font-weight:500}
+.opt .dot{color:var(--beige-deep);padding:0 5px}
+.opt[aria-pressed="true"] .dot{color:var(--green);opacity:.45}
+.opt:focus-visible{outline:2px solid var(--beige-deep);outline-offset:2px}
+
+.note{
+  margin:12px 0 0;font-size:12.5px;line-height:1.5;color:var(--ink-soft);
+  padding-left:11px;border-left:2px solid var(--beige);
+}
+
+/* one footer row carries the description toggle and the add control */
+.cardfoot{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  margin-top:13px;padding-top:11px;border-top:1px solid var(--beige-line);
+}
+.discl{
+  flex:0 1 auto;min-width:0;appearance:none;border:0;background:none;cursor:pointer;
+  font-family:var(--body);font-size:11px;letter-spacing:.07em;text-transform:uppercase;
+  font-weight:400;color:var(--ink-soft);padding:7px 0;white-space:nowrap;
+  display:flex;align-items:center;gap:6px;text-align:left;
+}
+.discl .pm{font-size:15px;line-height:1;color:var(--beige-deep);flex:0 0 auto}
+.lbl-short{display:none}
+@media (max-width:379px){
+  .lbl-full{display:none}
+  .lbl-short{display:inline}
+  .gobtn{padding:14px 15px}
+}
+.discl:focus-visible{outline:2px solid var(--beige-deep);outline-offset:2px}
+.addbtn{
+  flex:0 0 auto;appearance:none;cursor:pointer;font-family:var(--body);
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;
+  padding:10px 13px;border-radius:3px;border:1px solid var(--beige);
+  background:var(--white);color:var(--green);white-space:nowrap;
+}
+.card.on .addbtn{background:var(--beige);border-color:var(--beige)}
+.addbtn:focus-visible{outline:2px solid var(--beige-deep);outline-offset:2px}
+.addzone{flex:0 0 auto}
+.stepper{
+  display:flex;align-items:center;border:1px solid var(--beige);background:var(--beige);
+  border-radius:3px;overflow:hidden;
+}
+.stepbtn{
+  appearance:none;border:0;background:none;cursor:pointer;color:var(--green);
+  width:38px;height:38px;padding:0;font-family:var(--body);font-size:18px;font-weight:400;
+  line-height:1;display:flex;align-items:center;justify-content:center;
+}
+.stepbtn:disabled{opacity:.35;cursor:default}
+.stepbtn:focus-visible{outline:2px solid var(--green);outline-offset:-3px}
+.qty{
+  min-width:26px;text-align:center;font-size:13px;font-weight:500;color:var(--green);
+  font-variant-numeric:tabular-nums;
+}
+.detailbody{
+  font-size:14.5px;line-height:1.6;color:var(--ink-soft);
+  margin-top:10px;max-width:62ch;white-space:pre-line;
+}
+
+/* ---------- footer ---------- */
+.foot{border-top:1px solid var(--beige-line);margin-top:26px}
+.foot .wrap{padding-block:26px 30px}
+.foot h3{font-family:var(--display);font-weight:400;font-size:17px;margin:0 0 11px;color:var(--green)}
+.foot p{margin:0 0 8px;font-size:13.5px;color:var(--ink-soft);line-height:1.55}
+.foot .cur{
+  margin-top:18px;padding-top:14px;border-top:1px solid var(--beige-line);
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+}
+
+/* ---------- booking bar ---------- */
+.bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:35;
+  background:var(--white);border-top:1px solid var(--beige-line);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  box-shadow:0 -6px 22px rgba(30,28,24,.07);
+}
+.barin{
+  max-width:640px;margin:0 auto;display:flex;align-items:center;gap:14px;
+  padding-block:12px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+.tally{flex:1;min-width:0}
+.tally .picks{
+  display:block;font-size:14.5px;line-height:1.35;color:var(--ink);font-weight:400;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.tallybot{display:flex;align-items:baseline;gap:10px;margin-top:3px;min-width:0}
+.tally .sum{
+  font-size:11.5px;font-weight:400;color:var(--ink-soft);letter-spacing:.02em;
+  font-variant-numeric:tabular-nums;white-space:nowrap;flex:0 0 auto;
+}
+.gobtn{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  background:var(--beige);color:var(--green);
+  font-size:12.5px;letter-spacing:.11em;text-transform:uppercase;font-weight:600;
+  padding:14px 18px;border-radius:3px;
+}
+.gobtn:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.gobtn svg{width:16px;height:16px;fill:currentColor;flex:0 0 auto}
+.clearbtn{
+  flex:0 0 auto;appearance:none;border:0;background:none;cursor:pointer;color:var(--ink-soft);
+  font-family:var(--body);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:underline;padding:0;
+}
+.clearbtn:focus-visible{outline:2px solid var(--beige-deep);outline-offset:2px}
+
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<header class="masthead">
+  <div class="wrap gutter">
+    <img src="__LOGO__" alt="Esper Salon &amp; Spa">
+    <p>Choose what you need, add it to your visit, and send it to us in one message.</p>
+    <div class="whereline">
+      <span>Coco Plaza, 3rd floor, Toure Drive</span>
+      <span>Oysterbay, Dar es Salaam</span>
+      <span>Closed Tuesdays</span>
+      <span>Prices in TZS</span>
+    </div>
+  </div>
+</header>
+
+<nav class="tabrail">
+  <div class="wrap gutter xscroll">
+    <div class="tabs" id="tabs" role="tablist" aria-label="Service categories">__TABS__</div>
+  </div>
+</nav>
+
+<main class="wrap gutter" id="panels">__PANELS__</main>
+
+<div class="wrap gutter">
+  <div class="foot">
+    <div class="wrap">
+      <h3>Before you book</h3>
+      <p>Send your selection on WhatsApp and we will confirm a time with you. We reply between 9am and 7pm, every day except Tuesday.</p>
+      <p>Not sure which treatment is right for you? Tell us how you are feeling and we will help you find the one your body needs today.</p>
+      <p class="cur">All prices in Tanzanian shillings</p>
+    </div>
+  </div>
+</div>
+
+<div class="bar">
+  <div class="barin">
+    <div class="tally">
+      <span class="picks" id="tallyPicks">Nothing selected yet</span>
+      <div class="tallybot">
+        <span class="sum" id="tallySum">Tap Add on any treatment</span>
+        <button class="clearbtn" id="clearBtn" hidden>Clear</button>
+      </div>
+    </div>
+    <a class="gobtn" id="goBtn" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-1.99 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.73-4.1-4.87-4.29-.14-.19-1.16-1.54-1.16-2.94s.73-2.09.99-2.37c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.16.29.73 1.2 1.56 1.94 1.07.96 1.98 1.25 2.26 1.39.28.14.45.12.61-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.66.78 1.95.93.28.14.47.21.54.33.07.12.07.69-.18 1.38Z"/></svg>
+      <span id="goLabel">Book</span>
+    </a>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var WA = "255798711888";
+  var PLAIN     = ["Treatment","Full set","Service","Session"];  // left out of the WhatsApp line
+  var PILL_HIDE = ["Treatment","Full set","Service"];               // left off the price chip
+
+  var MENU = __DATA__;
+
+  var picked = new Map();          // "tabId/groupId:index" -> {oi: option index, q: quantity}
+  var MAXQ = 6;
+  var index  = {};                 // key -> item
+
+  function money(n){ return n.toLocaleString("en-US") + "/="; }   // WhatsApp message
+  function num(n){ return n.toLocaleString("en-US"); }            // on the page
+
+  // The menu is already in the HTML. This only attaches behaviour to it,
+  // so the full menu still reads correctly with no JavaScript at all.
+  function wireCard(c, item, key){
+    index[key] = item;
+
+    function toggle(){
+      if (picked.has(key)) {
+        picked.delete(key);
+      } else {
+        var sel = c.querySelector('.opt[aria-pressed="true"]');
+        picked.set(key, { oi: sel ? Number(sel.dataset.oi) : 0, q: 1 });
+      }
+      refresh();
+    }
+
+    var opts = Array.prototype.slice.call(c.querySelectorAll(".opt:not([disabled])"));
+    opts.forEach(function(b){
+      b.addEventListener("click", function(){
+        opts.forEach(function(x){ x.setAttribute("aria-pressed","false"); });
+        b.setAttribute("aria-pressed","true");
+        if (picked.has(key)) { picked.get(key).oi = Number(b.dataset.oi); refresh(); }
+      });
+    });
+
+    var discl = c.querySelector(".discl");
+    var body  = c.querySelector(".detailbody");
+    discl.addEventListener("click", function(){
+      var open = discl.getAttribute("aria-expanded") === "true";
+      discl.setAttribute("aria-expanded", open ? "false" : "true");
+      discl.querySelector(".pm").textContent = open ? "\u2013" : "+";
+      body.hidden = open;
+    });
+
+    c.querySelector(".addbtn").addEventListener("click", toggle);
+
+    var step = c.querySelector(".stepper");
+    if (step){
+      var sb = step.querySelectorAll(".stepbtn");
+      sb[0].addEventListener("click", function(){
+        var rec = picked.get(key);
+        if (!rec) return;
+        if (rec.q <= 1) picked.delete(key); else rec.q -= 1;
+        refresh();
+      });
+      sb[1].addEventListener("click", function(){
+        var rec = picked.get(key);
+        if (rec && rec.q < MAXQ) { rec.q += 1; refresh(); }
+      });
+    }
+  }
+
+  function wireAll(){
+    MENU.forEach(function(tab){
+      tab.groups.forEach(function(g){
+        g.items.forEach(function(item, ii){
+          if (item.sec) return;
+          var key = tab.id + "/" + g.id + ":" + ii;
+          var c = document.querySelector('[data-key="' + key + '"]');
+          if (c) wireCard(c, item, key);
+        });
+      });
+    });
+    wireRail(document.querySelectorAll(".tab"), true);
+    Array.prototype.forEach.call(document.querySelectorAll(".subrail"), function(r){
+      wireRail(r.querySelectorAll(".subtab"), false);
+    });
+  }
+
+  function wireRail(nodes, toTop){
+    var btns = Array.prototype.slice.call(nodes);
+    btns.forEach(function(b){
+      b.addEventListener("click", function(){
+        btns.forEach(function(x){
+          var same = x === b;
+          x.setAttribute("aria-selected", same ? "true" : "false");
+          var t = document.getElementById(x.getAttribute("aria-controls"));
+          if (same) t.removeAttribute("data-inactive"); else t.setAttribute("data-inactive","");
+        });
+        if (toTop) window.scrollTo({ top: 0, behavior: "auto" });
+      });
+    });
+  }
+
+  function lines(){
+    var out = [];
+    picked.forEach(function(rec, key){
+      var item = index[key];
+      var op = item.o[rec.oi];
+      var label = item.n;
+      if (item.ctx) label += " (" + item.ctx + ")";
+      if (PLAIN.indexOf(op.l) === -1) label += ", " + op.l;
+      out.push({ text: label, name: item.n, price: op.p, q: rec.q });
+    });
+    return out;
+  }
+
+  function refresh(){
+    document.querySelectorAll(".card").forEach(function(c){
+      var rec = picked.get(c.dataset.key);
+      var on = !!rec;
+      c.classList.toggle("on", on);
+      var add = c.querySelector(".addbtn");
+      var step = c.querySelector(".stepper");
+      if (step){
+        add.hidden = on;
+        step.hidden = !on;
+        if (on){
+          step.querySelector(".qty").textContent = String(rec.q);
+          step.querySelectorAll(".stepbtn")[1].disabled = rec.q >= MAXQ;
+        }
+      } else {
+        add.textContent = on ? "Added ✓" : "Add to my visit";
+        add.setAttribute("aria-pressed", on ? "true" : "false");
+      }
+    });
+
+    var items = lines();
+    var total = items.reduce(function(a,b){ return a + b.price * b.q; }, 0);
+
+    var pEl = document.getElementById("tallyPicks");
+    var sEl = document.getElementById("tallySum");
+    var clr = document.getElementById("clearBtn");
+    var lbl = document.getElementById("goLabel");
+
+    if (items.length === 0){
+      pEl.textContent = "Nothing selected yet";
+      sEl.textContent = "Tap Add on any treatment";
+      clr.hidden = true;
+      lbl.textContent = "Ask";
+    } else {
+      var names = items.map(function(i){ return i.q > 1 ? i.name + " ×" + i.q : i.name; });
+      pEl.textContent = names.length <= 2
+        ? names.join(", ")
+        : names.slice(0,2).join(", ") + "  +" + (names.length - 2);
+      sEl.textContent = "Total " + num(total);
+      clr.hidden = false;
+      lbl.textContent = "Book";
+    }
+
+    var msg;
+    if (items.length === 0){
+      msg = "Hi Esper, I have a question about your treatments.";
+    } else {
+      msg = "Hi Esper, I would like to book:\n\n";
+      var multi = false;
+      items.forEach(function(it){
+        if (it.q > 1) multi = true;
+        msg += "• " + it.text + (it.q > 1 ? " × " + it.q : "")
+             + " – " + money(it.price * it.q) + "\n";
+      });
+      msg += "\nTotal " + money(total);
+      if (multi) msg += "\n\nSome treatments are for more than one person, please confirm availability.";
+    }
+    document.getElementById("goBtn").href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
+  }
+
+  document.getElementById("clearBtn").addEventListener("click", function(){
+    picked.clear();
+    refresh();
+  });
+
+  wireAll();
+  refresh();
+})();
+</script>

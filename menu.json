@@ -1,0 +1,1674 @@
+[
+ {
+  "id": "massage",
+  "label": "Massage",
+  "v2": true,
+  "groups": [
+   {
+    "id": "fullbody",
+    "label": "Full Body",
+    "title": "Massage Escape Therapy",
+    "blurb": "Each treatment is designed with purpose. To restore, reset, and help you feel like yourself again.",
+    "items": [
+     {
+      "n": "Moroccan Hammam",
+      "h": "A full cleansing ritual with steam, exfoliation and nourishing treatment.",
+      "d": "A deeply cleansing and rejuvenating ritual designed to purify the body, soften the skin, and release stress. Using steam, exfoliation, and nourishing treatments, it removes dead skin, improves circulation, and leaves you feeling refreshed, smooth, and renewed.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 250000
+       }
+      ]
+     },
+     {
+      "n": "Herbal Heat Therapy",
+      "h": "Steamed African herbs pressed along the body.",
+      "d": "For lovers of natural healing. Steamed African herbs are pressed along the body to ease aches, release fatigue, and deeply nourish tired tissues.",
+      "o": [
+       {
+        "l": "90 min",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Twin Massage",
+      "h": "Four hands. Two therapists working in time with each other.",
+      "d": "Also known as 4 Hands Massage. Two therapists work in perfect harmony to deliver a deeply relaxing and immersive experience. The synchronized movements help release tension, improve circulation, reduce stress, and leave the body feeling completely renewed and balanced.",
+      "note": "90 min options are also available. Ask us when you book.",
+      "o": [
+       {
+        "l": "Swedish, 60 min",
+        "p": 190000
+       },
+       {
+        "l": "Deep Tissue, 60 min",
+        "p": 290000
+       },
+       {
+        "l": "Hot Stone, 90 min",
+        "p": 350000
+       }
+      ]
+     },
+     {
+      "n": "Couples Massage",
+      "h": "Two people, side by side, in the same room.",
+      "d": "For connection, whether with a partner, friend, or loved one. A shared journey into relaxation, side by side.",
+      "note": "90 min options are also available. Ask us when you book.",
+      "o": [
+       {
+        "l": "Swedish, 60 min",
+        "p": 190000
+       },
+       {
+        "l": "Deep Tissue, 60 min",
+        "p": 290000
+       },
+       {
+        "l": "Hot Stone, 60 min",
+        "p": 350000
+       }
+      ]
+     },
+     {
+      "n": "Hot Stone Massage",
+      "h": "Heated stones to melt tension you have been carrying a while.",
+      "d": "For those carrying deep fatigue or seasonal heaviness, physically or emotionally. Heated stones melt muscle tension for full-body renewal.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 180000
+       },
+       {
+        "l": "90 min",
+        "p": 230000
+       }
+      ]
+     },
+     {
+      "n": "Cupping Massage",
+      "h": "Gentle suction cups to release deep muscle tension.",
+      "d": "A restorative therapy that uses gentle suction cups to release deep muscle tension, improve blood circulation, and promote natural healing. It helps reduce pain, ease stiffness, relieve stress, and leave the body feeling lighter, relaxed, and refreshed.",
+      "o": [
+       {
+        "l": "60 min, with massage",
+        "p": 180000
+       },
+       {
+        "l": "90 min, with hot stone massage",
+        "p": 300000
+       }
+      ]
+     },
+     {
+      "n": "Pregnancy Massage",
+      "h": "Comfort and relief for expecting and new mothers.",
+      "d": "For expecting or new mothers seeking comfort, relief and a tender moment of care.",
+      "note": "A short consultation with your therapist takes place before the session.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 175000
+       },
+       {
+        "l": "90 min",
+        "p": 225000
+       }
+      ]
+     },
+     {
+      "n": "Signature Massage",
+      "flag": "House favourite",
+      "h": "Our own blend, drawn from several massage traditions.",
+      "d": "A combination of all the right techniques from different massage concepts to ensure complete relaxation.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 150000
+       },
+       {
+        "l": "90 min",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Deep Tissue Massage",
+      "h": "Slow, firm strokes for muscles that are genuinely tired.",
+      "d": "For high performers, frequent gym goers, or anyone feeling physically drained. Slow, deep strokes bring long-lasting muscle relief.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 150000
+       },
+       {
+        "l": "90 min",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Thai Massage",
+      "h": "Assisted stretching and pressure work to restore flexibility.",
+      "d": "A therapeutic full-body treatment that combines stretching, pressure techniques, and deep relaxation to release tension, improve flexibility, and restore energy flow. It helps relieve muscle stiffness, reduce stress, and leave the body feeling balanced, refreshed, and revitalized.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 150000
+       },
+       {
+        "l": "90 min",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Sport Massage",
+      "h": "Targeted recovery for an active body.",
+      "d": "A targeted treatment designed to relieve muscle tension, reduce soreness, and support faster recovery. Ideal for active lifestyles, it helps improve flexibility, enhance performance, prevent injuries, and leave the body feeling stronger, lighter, and re-energized.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 150000
+       },
+       {
+        "l": "90 min",
+        "p": 230000
+       }
+      ]
+     },
+     {
+      "n": "Lymphatic Drainage Massage",
+      "h": "When your body needs a reset, not just a rest.",
+      "d": "Light, rhythmic strokes that encourage lymph flow, ease puffiness and heaviness, and leave the body feeling lighter rather than simply relaxed.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 150000
+       },
+       {
+        "l": "90 min",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Swedish Massage",
+      "h": "Calming, full body, and the easiest place to start.",
+      "d": "For the overthinker, the tense shoulders, and the mind that needs a break. A calming experience that improves circulation and guides your entire body into ease.",
+      "o": [
+       {
+        "l": "60 min",
+        "p": 100000
+       },
+       {
+        "l": "90 min",
+        "p": 140000
+       }
+      ]
+     },
+     {
+      "n": "Full Body Scrub",
+      "h": "Removes dullness and roughness in one session.",
+      "d": "Instantly removes dullness and roughness, revealing a brighter glow and fresh, soft skin.",
+      "o": [
+       {
+        "l": "45 min",
+        "p": 100000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "targeted",
+    "label": "Targeted Relief",
+    "title": "The Art of Targeted Relief",
+    "blurb": "Because sometimes, you know exactly where it hurts.",
+    "items": [
+     {
+      "n": "Back Massage",
+      "h": "Undo the weight of your day, one vertebra at a time.",
+      "d": "Focused work across the full back, from the base of the neck to the lower spine, for the stiffness that builds up through a long week at a desk or on your feet.",
+      "o": [
+       {
+        "l": "30 min",
+        "p": 80000
+       },
+       {
+        "l": "45 min",
+        "p": 120000
+       },
+       {
+        "l": "60 min",
+        "p": 150000
+       }
+      ]
+     },
+     {
+      "n": "Foot Reflexology / Hand Reflexology",
+      "h": "Reset from the sole up.",
+      "d": "Firm, precise pressure applied to points on the feet or the hands. Choose either when you book.",
+      "o": [
+       {
+        "l": "30 min",
+        "p": 80000
+       },
+       {
+        "l": "60 min",
+        "p": 110000
+       }
+      ]
+     },
+     {
+      "n": "Hot Oil Head Massage",
+      "h": "A warm escape for your mind.",
+      "d": "Warmed oil worked through the scalp and hairline with slow pressure, easing tension headaches and leaving the hair conditioned.",
+      "o": [
+       {
+        "l": "30 min",
+        "p": 55000
+       },
+       {
+        "l": "45 min",
+        "p": 65000
+       },
+       {
+        "l": "60 min",
+        "p": 90000
+       }
+      ]
+     },
+     {
+      "n": "Neck & Shoulder Massage",
+      "h": "Where stress hides, and we find it.",
+      "d": "Concentrated work across the neck, shoulders and upper back. The shortest route to relief if you spend your day at a screen or a phone.",
+      "o": [
+       {
+        "l": "30 min",
+        "p": 50000
+       },
+       {
+        "l": "45 min",
+        "p": 65000
+       },
+       {
+        "l": "60 min",
+        "p": 90000
+       }
+      ]
+     },
+     {
+      "n": "Foot Massage",
+      "h": "Your entire body rests on your feet. Give them 30 minutes back.",
+      "d": "Relieving work through the soles, arches and ankles for feet that have carried you through long days, heels or standing shifts.",
+      "o": [
+       {
+        "l": "30 min",
+        "p": 50000
+       },
+       {
+        "l": "45 min",
+        "p": 65000
+       },
+       {
+        "l": "60 min",
+        "p": 90000
+       }
+      ]
+     },
+     {
+      "n": "Face Massage",
+      "h": "Gentle sculpting. Radiant awakening.",
+      "d": "Light lifting and draining movements across the face, jaw and brow to ease tension and leave the skin looking awake.",
+      "o": [
+       {
+        "l": "30 min",
+        "p": 50000
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hair",
+  "label": "Hair",
+  "groups": [
+   {
+    "id": "hairtreat",
+    "label": "Treatments",
+    "title": "Hair Treatments",
+    "blurb": "Smooth. Restore. Rejuvenate.",
+    "items": [
+     {
+      "n": "Hair Botox",
+      "h": "Anti-ageing therapy for overworked, dry or chemically treated hair.",
+      "d": "Revives tired strands with youthful softness, radiant shine, and frizz-free smoothness. This anti-ageing hair therapy deeply repairs and restores texture, ideal for overworked, chemically treated, or dry hair.",
+      "o": [
+       {
+        "l": "Short & medium hair",
+        "p": 400000
+       },
+       {
+        "l": "Long hair",
+        "p": 485000
+       }
+      ]
+     },
+     {
+      "n": "Keratin Treatment",
+      "h": "Sleek, frizz-free hair that stays smooth for weeks.",
+      "d": "Enjoy sleek, frizz-free hair that stays smooth for weeks. This straightening treatment tames curls, adds radiant shine, and offers long-lasting humidity protection.",
+      "o": [
+       {
+        "l": "Short & medium hair",
+        "p": 400000
+       },
+       {
+        "l": "Long hair",
+        "p": 485000
+       }
+      ]
+     },
+     {
+      "n": "Bonding Hair Treatment",
+      "h": "Rebuilds broken bonds in damaged or over-processed hair.",
+      "d": "For hair that is damaged, weak, or over-processed. This advanced treatment rebuilds broken bonds inside the hair shaft, restoring strength, smoothness, and shine from the very first session. Expect less breakage, longer-lasting colour, and healthier looking hair that feels transformed.",
+      "note": "From 120,000/=. Your stylist confirms the final price at consultation.",
+      "o": [
+       {
+        "l": "From",
+        "p": 120000
+       }
+      ]
+     },
+     {
+      "n": "Deep Conditioning",
+      "h": "Intense moisture for dry or brittle strands.",
+      "d": "Softer, shinier and more manageable hair in just one session. Delivers intense moisture and nourishment to revive dry or brittle strands.",
+      "note": "Price depends on your hair type, volume and needs.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 65000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "haircolour",
+    "label": "Colour",
+    "title": "Colour Services",
+    "blurb": "Define your tone. Brighten your mood. Transform your look.",
+    "items": [
+     {
+      "n": "Balayage",
+      "h": "Hand painted, sun-kissed dimension that grows out softly.",
+      "d": "Soft, sun-kissed dimension that looks effortless and lived-in. Hand painted highlights designed to brighten your face and elevate your look with natural elegance.",
+      "note": "From 400,000/=. The final price depends on your length and density, and is confirmed at consultation.",
+      "o": [
+       {
+        "l": "From",
+        "p": 400000
+       }
+      ]
+     },
+     {
+      "n": "Highlights",
+      "h": "Lifted sections through the length for brightness and movement.",
+      "d": "Sections are lifted through the length of the hair to add brightness, depth and movement. Placement is planned around your cut and your face shape.",
+      "o": [
+       {
+        "l": "Short & medium hair",
+        "p": 300000
+       },
+       {
+        "l": "Long hair",
+        "p": 400000
+       }
+      ]
+     },
+     {
+      "n": "Hair Color",
+      "h": "Full application of colour, root to tip.",
+      "d": "A full head of colour from root to tip, whether you are covering grey, going richer, or changing tone entirely.",
+      "o": [
+       {
+        "l": "Short & medium hair",
+        "p": 200000
+       },
+       {
+        "l": "Long hair",
+        "p": 250000
+       }
+      ]
+     },
+     {
+      "n": "Roots Highlights / Half Head",
+      "h": "Refresh your highlights without a full head.",
+      "d": "Highlights reapplied through the top and the regrowth area to keep your existing colour looking fresh between full appointments.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Roots Color",
+      "h": "Regrowth covered neatly at the root line.",
+      "d": "Colour applied to the regrowth only, matched to your existing shade so the line disappears.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 120000
+       }
+      ]
+     },
+     {
+      "n": "Hair Toner",
+      "h": "Adjusts tone and cancels brassiness after lightening.",
+      "d": "A finishing step that corrects unwanted warmth and sets the exact tone you want after colouring or highlighting.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 75000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "haircut",
+    "label": "Cut & Style",
+    "title": "Styling & Finishing",
+    "blurb": "Simple, clean, refined.",
+    "items": [
+     {
+      "n": "Cut & Blowdry",
+      "h": "Cut and finish in one appointment. Hair wash included.",
+      "d": "A full consultation, cut and blow dry finish, with your hair wash included.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 100000
+       }
+      ]
+     },
+     {
+      "n": "Wash & Blowdry",
+      "h": "Wash and a smooth finish, no cut.",
+      "d": "A wash followed by a blow dry finish, shaped the way you like to wear it.",
+      "o": [
+       {
+        "l": "Short & medium hair",
+        "p": 60000
+       },
+       {
+        "l": "Long hair",
+        "p": 70000
+       },
+       {
+        "l": "Wig",
+        "p": 70000
+       }
+      ]
+     },
+     {
+      "n": "Lady's Cut",
+      "h": "Cut and shape. Hair wash included.",
+      "d": "A consultation and cut shaped to your hair type and the way you wear it day to day. Includes your hair wash.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 60000
+       }
+      ]
+     },
+     {
+      "n": "Hair Extensions Removal",
+      "h": "Careful removal with your own hair protected.",
+      "d": "Extensions taken out section by section, with care taken to protect the condition of your natural hair underneath.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Hair Wash",
+      "h": "A wash on its own.",
+      "d": "A shampoo and condition at the basin, without a finish.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 20000
+       }
+      ]
+     },
+     {
+      "n": "Hair Extensions Refill",
+      "h": "Priced per piece.",
+      "d": "Existing extensions moved back up to the root as your own hair grows. Charged for each piece refitted.",
+      "note": "Tell us roughly how many pieces you have and we will confirm the total before your appointment.",
+      "o": [
+       {
+        "l": "Per piece",
+        "p": 6000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "hairgents",
+    "label": "Gents",
+    "title": "Gents",
+    "blurb": "Cut, colour and beard work in one place.",
+    "intro": {
+     "t": "Also available",
+     "b": "Hair Botox, Keratin, Bonding and Deep Conditioning are on the Treatments tab, and Hair Wash is under Cut & Style. Those are the same for everyone."
+    },
+    "items": [
+     {
+      "n": "Gents Color",
+      "h": "Colour service for gentlemen.",
+      "d": "Colour applied to shorter hair, whether you are covering grey or deepening your natural shade.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 100000
+       }
+      ]
+     },
+     {
+      "n": "Gent's Cut",
+      "h": "Cut and shape. Hair wash included.",
+      "d": "A clean, precise cut finished to your preferred length and shape. Includes your hair wash.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Beard Trim",
+      "h": "Shaped, lined and tidied.",
+      "d": "Your beard trimmed to length, with the cheek and neck lines cleaned up.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 20000
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "facials",
+  "label": "Facials",
+  "groups": [
+   {
+    "id": "facemain",
+    "label": "Facials",
+    "title": "Facials",
+    "blurb": "Treatments for the face, chosen around what your skin is doing now.",
+    "items": [
+     {
+      "n": "Platinum Hydrafacial",
+      "h": "Our most advanced hydrafacial.",
+      "d": "Deep cleansing, exfoliation, extraction and hydration in one session, with the full set of boosters included.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 350000
+       }
+      ]
+     },
+     {
+      "n": "Diamond Peel with PDT (LED)",
+      "h": "Diamond peel finished with LED light therapy.",
+      "d": "Diamond tip exfoliation to resurface the skin, followed by LED light therapy to calm and support the skin afterwards.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 230000
+       }
+      ]
+     },
+     {
+      "n": "Hydrafacial",
+      "h": "Cleanse, exfoliate, extract and hydrate in one session.",
+      "d": "A multi-step facial that cleanses, exfoliates, draws out congestion and finishes with intensive hydration.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Deep Cleansing Facial with PDT (normal mask)",
+      "h": "Deep cleanse finished with light therapy and a mask.",
+      "d": "A thorough deep cleanse with extractions, finished with LED light therapy and a nourishing mask.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 150000
+       }
+      ]
+     },
+     {
+      "n": "Diamond Peel Facial",
+      "h": "Resurfacing exfoliation for texture and dullness.",
+      "d": "Diamond tip exfoliation that lifts away dead surface skin to smooth texture and brighten a dull complexion.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 150000
+       }
+      ]
+     },
+     {
+      "n": "Anti-Acne Facial",
+      "h": "For congested or breaking-out skin.",
+      "d": "A targeted facial for congested skin, combining deep cleansing and extraction with products chosen to calm active breakouts.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 130000
+       }
+      ]
+     },
+     {
+      "n": "Anti-Aging Collagen Facial Treatment",
+      "h": "Collagen support for firmness and fine lines.",
+      "d": "A firming facial built around collagen support, aimed at fine lines and loss of elasticity.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 130000
+       }
+      ]
+     },
+     {
+      "n": "Deep Cleansing Facial",
+      "h": "The thorough clean, with extractions.",
+      "d": "A full cleanse, exfoliation and extraction to clear congestion and leave the skin genuinely clean.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 100000
+       }
+      ]
+     },
+     {
+      "n": "Ultrasonic Eye Bag Removal",
+      "h": "Targeted work on puffiness under the eyes.",
+      "d": "Ultrasonic treatment focused on the under-eye area to reduce puffiness and soften shadowing.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 100000
+       }
+      ]
+     },
+     {
+      "n": "Warts Removal 10pcs",
+      "h": "Up to ten treated in one session.",
+      "d": "Removal of up to ten small warts in a single session. We will look at the area and confirm before starting.",
+      "o": [
+       {
+        "l": "Up to 10 pieces",
+        "p": 70000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "facebundle",
+    "label": "Bundles",
+    "title": "Bundles",
+    "blurb": "Several treatments combined into one appointment.",
+    "items": [
+     {
+      "n": "Platinum Glow Facial",
+      "h": "Our most complete facial session.",
+      "d": "Signature deep cleansing, diamond peel, galvanic, ultrasonic for face and eyebags, anti wrinkle, hydrating booster, vitamin C and anti-ageing treatment.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 315000
+       }
+      ]
+     },
+     {
+      "n": "Detox & Balance Hydration",
+      "h": "Deep cleaning, microdermabrasion and skin tightening.",
+      "d": "Deep cleaning, microdermabrasion, galvanic and ultrasonic skin tightening treatment.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 250000
+       }
+      ]
+     },
+     {
+      "n": "Ultimate Facial Treatment",
+      "h": "Diamond peel with rejuvenation and pore tightening.",
+      "d": "Facial diamond peel, galvanic skin rejuvenation and pore tightening treatment.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Body Dermabrasion",
+      "h": "Back treatments. Choose the one you need.",
+      "d": "Three back treatments at the same price:\n\nBack Facial (Basic Cleaning)\nAcne Back Treatment (Anti Acne)\nBack Dermabrasion (Diamond Peel)",
+      "o": [
+       {
+        "l": "Back Facial, basic cleaning",
+        "p": 175000
+       },
+       {
+        "l": "Acne back treatment",
+        "p": 175000
+       },
+       {
+        "l": "Back Dermabrasion, diamond peel",
+        "p": 175000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rfmicro",
+    "label": "RF Microneedling",
+    "title": "RF Microneedling",
+    "blurb": "The treatment that rebuilds skin from underneath.",
+    "intro": {
+     "t": "What it is, in plain words",
+     "b": "Creams work on the surface. The problems that bother you most, the texture, the scars, the softening along your jaw, sit deeper than any cream can reach.\n\nRF microneedling goes there. Fine needles create tiny channels in the skin while radiofrequency energy warms the layer underneath. Your skin reads this as something to repair, and it responds by producing fresh collagen, the scaffolding that holds skin firm, smooth and tight.\n\nYou are not having something added to your face. You are switching your own collagen production back on.\n\nThe real change arrives quietly, over six to twelve weeks, and keeps improving after your last session.\n\nEvery treatment begins with a professional assessment. Courses of four available on request."
+    },
+    "items": [
+     {
+      "n": "Age-Defence Collagen Boost",
+      "h": "For skin that needs lifting, not polishing.",
+      "d": "This is for skin that needs lifting, not polishing. Deeper lines, real loss of firmness, the softening that makes you pull your skin back in the mirror to see what you used to look like.\n\nOur most intensive collagen treatment, working at the depths where firmness is actually built.\n\nResults build over 8 to 12 weeks and continue improving after your final session.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 500000
+       }
+      ]
+     },
+     {
+      "n": "Scar Refinement Therapy (Acne Scarring)",
+      "h": "For indented scarring that no serum has ever touched.",
+      "d": "The breakouts stopped years ago. The marks they left did not. You've learned which light to avoid, which angle, how much concealer it takes. No serum has ever touched them, because the damage isn't on the surface. It's a dent in the structure underneath.\n\nThis treatment works at that depth, prompting the skin to rebuild where it collapsed.\n\nScars soften gradually over 3 to 4 sessions, a month apart. The treatment most worth committing to a full course.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 300000
+       }
+      ]
+     },
+     {
+      "n": "Pore & Texture Refinement",
+      "h": "For skin that looks fine across the room and rough up close.",
+      "d": "Your skin looks fine from across the room and rough up close. Enlarged pores across the nose and cheeks, a grainy texture under your fingertips, makeup that never quite sits smooth. You've tried every product that promised to fix it.\n\nProducts sit on top of the problem. This works inside it.\n\nTexture smooths from around week four. Pores tighten rather than vanish, and anyone promising otherwise isn't being honest with you.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 300000
+       }
+      ]
+     },
+     {
+      "n": "Scarless Look Refinement (Face & Neck)",
+      "h": "For when your neck tells a different story to your face.",
+      "d": "You've looked after your face for years. Your neck tells a different story. Crepey texture, loose skin, lines across the throat that no amount of face cream has ever reached.\n\nFace and neck treated together, so the two finally match.\n\nThe neck responds more slowly than the face. Expect a course of three to four.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 300000
+       }
+      ]
+     },
+     {
+      "n": "Lumière Collagen Renewal (Full Face)",
+      "h": "For skin starting to lose its structure.",
+      "d": "You've started noticing it in photographs before you notice it in the mirror. The skin along your jaw isn't as defined. There are fine lines that don't disappear when your face relaxes. Your foundation sits in places it never used to.\n\nThis is the full-face treatment for skin that has begun to lose its structure but isn't ready for anything drastic.\n\nFirmer, smoother skin from around week six. Best as a course of three.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 265000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ivdrips",
+    "label": "IV Drips",
+    "title": "IV Drip Therapy",
+    "blurb": "Hydration and nutrients delivered where creams and tablets cannot reach.",
+    "intro": {
+     "t": "Before you book",
+     "b": "Administered under qualified supervision. A short health assessment is required before your first session. Courses of four available on request."
+    },
+    "items": [
+     {
+      "n": "Pearl White Radiance",
+      "h": "For uneven tone and skin that photographs darker than it looks.",
+      "d": "For uneven tone, dark patches, and skin that photographs darker than it looks. Supports a brighter, more even complexion over a course.\n\nGradual and cumulative. Expect 4 to 6 sessions. Works alongside daily SPF.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 450000
+       }
+      ]
+     },
+     {
+      "n": "The Bridal Glow Experience",
+      "h": "For the six weeks before the day.",
+      "d": "For the six weeks before the day. Glow, tone, hydration and the energy to survive the schedule you are about to take on.\n\nBest booked as a course of four, finishing 5 to 7 days before the wedding.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 450000
+       }
+      ]
+     },
+     {
+      "n": "Skin Wellness Cocktail",
+      "h": "For skin doing several things at once.",
+      "d": "For skin doing several things at once: breakouts, uneven tone, early fine lines, where one problem is not the whole story.\n\nTone evens out over 3 to 4 weeks. The one for a programme, not a single session.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 385000
+       }
+      ]
+     },
+     {
+      "n": "Lumière Radiance Drip",
+      "h": "For skin that looks dull no matter how much water you drink.",
+      "d": "For skin that looks dull and tired no matter how much water you drink. Deep hydration and skin minerals, delivered where creams cannot reach.\n\nBrighter, plumper skin within 24 to 48 hours. Best as a monthly reset.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 350000
+       }
+      ]
+     },
+     {
+      "n": "Slimming & Metabolic Wellness Drip",
+      "h": "For when the effort is not matching the result.",
+      "d": "For clients working on their weight who feel the effort is not matching the result. Supports metabolism, hydration and energy alongside diet and training.\n\nBegins with a full assessment. Better energy for training, fewer cravings.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 350000
+       }
+      ]
+     },
+     {
+      "n": "Alpha Drip",
+      "h": "For men running on empty.",
+      "d": "For men running on empty: gym performance flattening, energy gone by evening, recovery taking longer than it used to.\n\nNoticeable in training within a week. Better recovery, steadier energy.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 300000
+       }
+      ]
+     },
+     {
+      "n": "Ultimate Power Up",
+      "h": "For men. The Alpha Drip plus the skin and anti-ageing side.",
+      "d": "The upgrade. Everything in the Alpha Drip plus the skin and anti-ageing side, for men who want to look as sharp as they feel.\n\nEnergy within days, skin clarity over 3 to 4 weeks.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 300000
+       }
+      ]
+     },
+     {
+      "n": "Vitality Boost",
+      "h": "For the 3pm crash and the heavy mornings.",
+      "d": "For the 3pm crash, the heavy mornings, the workouts you keep postponing. Low energy is usually something measurable sitting below where it should be.\n\nMost clients feel it the same evening. Builds over 3 to 4 sessions.",
+      "o": [
+       {
+        "l": "Session",
+        "p": 265000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bruno",
+    "label": "Bruno Vassari",
+    "title": "Bruno Vassari",
+    "blurb": "A professional treatment range, each session built around one concern.",
+    "items": [
+     {
+      "n": "Pre-Hyaluronic Acid Booster",
+      "h": "Intensive hydration at depth.",
+      "d": "A hydration-focused treatment from the Bruno Vassari range, built around hyaluronic acid to plump and hold moisture in the skin.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 230000
+       }
+      ]
+     },
+     {
+      "n": "Aqua Genomic Facial",
+      "h": "Moisture repair for dehydrated skin.",
+      "d": "A Bruno Vassari treatment aimed at restoring the skin's own moisture balance.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 180000
+       }
+      ]
+     },
+     {
+      "n": "Oily Control Treatment",
+      "h": "For oily and congestion-prone skin.",
+      "d": "A Bruno Vassari treatment that regulates excess oil and reduces the congestion that comes with it.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 180000
+       }
+      ]
+     },
+     {
+      "n": "Glyco System / Exfoliating Revitalizing Treatment",
+      "h": "Glycolic resurfacing for tone and texture.",
+      "d": "A Bruno Vassari glycolic treatment that exfoliates at the surface to even tone and refine texture.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 180000
+       }
+      ]
+     },
+     {
+      "n": "Intensive Whitening Treatment",
+      "h": "Targets pigmentation and uneven tone.",
+      "d": "A Bruno Vassari brightening treatment aimed at dark patches, sun marks and uneven tone.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 180000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bikini",
+    "label": "Bikini",
+    "title": "Bikini Rejuvenation",
+    "blurb": "Discreet treatments, carried out in a private room.",
+    "items": [
+     {
+      "n": "Vajacial Reconstruction Treatment",
+      "h": "Groin whitening, deep cleaning and firming.",
+      "d": "The most complete of our vajacial treatments, combining groin whitening, deep cleaning and firming in one session.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 125000
+       }
+      ]
+     },
+     {
+      "n": "Vajacial With Brazilian Wax",
+      "h": "Vajacial and Brazilian wax in one appointment.",
+      "d": "A Brazilian wax followed by a full vajacial, so the skin is treated and calmed straight after waxing.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 100000
+       }
+      ]
+     },
+     {
+      "n": "Vajacial",
+      "h": "Steaming and cleaning for the bikini area.",
+      "d": "Steaming and cleaning of the bikini area, easing ingrown hairs and leaving the skin comfortable.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 75000
+       }
+      ]
+     },
+     {
+      "n": "Under Arm Whitening Treatment",
+      "h": "Evens tone under the arms.",
+      "d": "A brightening treatment for darkening under the arms, often caused by shaving or friction.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Brazilian Whitening",
+      "h": "Evens tone in the bikini area.",
+      "d": "A brightening treatment for the bikini area, targeting discolouration from shaving and friction.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 50000
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lashes",
+  "label": "Lashes & Brows",
+  "groups": [
+   {
+    "id": "lashall",
+    "label": null,
+    "title": "Lashes & Brows",
+    "blurb": "Open eyes and a defined brow, shaped to suit your face rather than a trend.",
+    "items": [
+     {
+      "n": "Mega Volume",
+      "h": "The fullest set we make. Dense and dramatic.",
+      "d": "The fullest set we offer. Built from very fine, lightweight fans so a dense, dark lash line still stays comfortable to wear.",
+      "o": [
+       {
+        "l": "Full set",
+        "p": 95000
+       }
+      ]
+     },
+     {
+      "n": "Volume Set",
+      "h": "Fans on each lash for a full, dark lash line.",
+      "d": "Several lightweight extensions are fanned and applied to each natural lash, giving noticeable fullness and depth with a soft, feathered edge.",
+      "o": [
+       {
+        "l": "Full set",
+        "p": 80000
+       }
+      ]
+     },
+     {
+      "n": "Hybrid Set",
+      "h": "Classic and volume mixed. Fuller, with natural texture.",
+      "d": "A mix of single classic extensions and volume fans across the lash line. More fullness than classic, with a textured finish that still reads as your own lashes.",
+      "o": [
+       {
+        "l": "Full set",
+        "p": 70000
+       }
+      ]
+     },
+     {
+      "n": "Classic Set",
+      "h": "One extension per lash. Length and definition, nothing more.",
+      "d": "A single extension is applied to each of your own lashes. Adds length and definition while keeping the look close to your natural lash line. The usual starting point if this is your first set.",
+      "o": [
+       {
+        "l": "Full set",
+        "p": 60000
+       }
+      ]
+     },
+     {
+      "n": "Lash Lifting",
+      "h": "Curls your own lashes upward. No extensions.",
+      "d": "Your natural lashes are set into a lifted curve from the root, so the eye looks more open without any extensions to maintain. A good option if you want a lighter commitment than a full set.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Eyelash Tinting",
+      "h": "Darkens your own lashes. No extensions.",
+      "d": "A tint applied to your natural lashes so they read darker and more defined without extensions or daily mascara.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Eyebrow Tinting",
+      "h": "Darkens and defines the natural brow.",
+      "d": "A tint worked through the brow to deepen the colour, fill sparse patches and give the shape a cleaner, more defined line.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 50000
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nails",
+  "label": "Nails",
+  "groups": [
+   {
+    "id": "nailall",
+    "label": null,
+    "title": "Nail Care",
+    "blurb": "Because how you care for your hands and feet says everything about how you care for yourself.",
+    "items": [
+     {
+      "sec": "Manicures & Pedicures"
+     },
+     {
+      "n": "Paraffin Therapy Pedicure",
+      "h": "Feet. Callus work, scrub, paraffin wrap and polish.",
+      "d": "Ultimate hydration and rejuvenation for overworked feet. This luxurious treatment combines thorough nail and cuticle care, callus and hard skin removal, an exfoliating scrub, a relaxing massage, and a paraffin infusion to restore suppleness and comfort.\n\nFinished with regular polish in the colour of your choice.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 80000
+       }
+      ]
+     },
+     {
+      "n": "Paraffin Therapy Manicure",
+      "h": "Hands. Scrub, paraffin wrap and polish.",
+      "d": "An intensely hydrating treatment that deeply nourishes the skin, restores softness, and reverses dryness. The experience includes nail and cuticle care, an exfoliating scrub, massage, and a warm paraffin wrap for silky smooth hands.\n\nFinished with regular polish in the colour of your choice.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 80000
+       }
+      ]
+     },
+     {
+      "n": "Gel Pedicure",
+      "h": "Feet. Callus work, scrub and gel polish that lasts weeks.",
+      "d": "Deep care and dazzling shine for your feet. Full nail and cuticle grooming, callus and hard skin removal, an exfoliating scrub, and a revitalizing foot massage.\n\nFinished with gel polish for a long-lasting, chip-resistant result.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 80000
+       }
+      ]
+     },
+     {
+      "n": "Gel Manicure",
+      "h": "Hands. Scrub, massage and gel polish that lasts weeks.",
+      "d": "A long-lasting, chip-resistant manicure that stays flawless for weeks. Includes detailed nail shaping, cuticle care, an exfoliating scrub, and a hand massage for soft, nourished skin.\n\nFinished with gel polish in the colour of your choice.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 60000
+       }
+      ]
+     },
+     {
+      "n": "Classic Pedicure",
+      "h": "Feet. Callus work, scrub, massage and polish.",
+      "d": "More than a pedicure, this is a therapeutic foot care experience. It begins with nail and cuticle grooming, followed by callus and hard skin removal and an invigorating scrub to clear dryness and roughness. A soothing foot massage melts away tension and improves circulation, leaving your feet smooth, soft, and beautifully refreshed.\n\nFinished with regular polish in the colour of your choice.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 60000
+       }
+      ]
+     },
+     {
+      "n": "Classic Manicure",
+      "h": "Hands. Scrub, massage and polish.",
+      "d": "A complete hand care ritual designed to rejuvenate and beautify. Includes expert nail shaping, thorough cuticle cleaning, an exfoliating scrub to remove dead skin, and a relaxing hand massage to boost circulation.\n\nFinished with regular polish in the colour of your choice. If you would like gel polish instead, book the Gel Manicure.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "sec": "Foot Rituals"
+     },
+     {
+      "n": "Foot Spa Ritual + Classic Pedicure",
+      "h": "The callus ritual and a full pedicure together.",
+      "d": "The full foot spa ritual, focused on calluses and hard skin, followed by a classic pedicure with nail and cuticle care, scrub, massage and polish.\n\nThe complete option if your feet need both the hard skin work and the nail care.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 100000
+       }
+      ]
+     },
+     {
+      "n": "Foot Spa Ritual",
+      "h": "Callus and hard skin work only. No nail care or polish.",
+      "d": "A deeply relaxing and restorative experience that revives tired feet, built around removing calluses and hard skin. Includes an aromatic soak, scraping and exfoliation, a nourishing mask, and a therapeutic massage to improve circulation and relieve tension.\n\nThis is foot care rather than nail care. It does not include nail cutting, cuticle work or polish. Add a pedicure if you want those as well.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 70000
+       }
+      ]
+     },
+     {
+      "sec": "Enhancements"
+     },
+     {
+      "n": "Nail Enhancements",
+      "h": "Four systems, one price. Your technician recommends the right one for your natural nail.",
+      "d": "Acrylic Perfection Set\nA custom crafted set of durable, beautifully shaped nails with a flawless finish. This service includes expert shaping, preparation, and sculpting tailored to your style for long-lasting, salon-perfect results.\n\nBuilder Gel\nA strengthening treatment ideal for weak, brittle, or thin nails. Builder Gel adds durable structure and support while maintaining a natural appearance. Perfect as a base for gel polish or on its own for long-lasting, flawless nails.\n\nPolygel Extensions\nThe best of both worlds. Polygel combines the strength of acrylic with the flexibility of gel for lightweight, natural-looking enhancements. Each set is custom-sculpted to your desired shape and length, delivering durability, comfort, and elegance.\n\nBio Gel Overlay\nAn advanced, breathable gel system enriched with natural ingredients to protect and strengthen your natural nails. Ideal for clients seeking a healthier alternative to traditional enhancements without sacrificing beauty or longevity.",
+      "o": [
+       {
+        "l": "Acrylic Perfection Set",
+        "p": 150000
+       },
+       {
+        "l": "Builder Gel",
+        "p": 150000
+       },
+       {
+        "l": "Polygel Extensions",
+        "p": 150000
+       },
+       {
+        "l": "Bio Gel Overlay",
+        "p": 150000
+       }
+      ]
+     },
+     {
+      "n": "Acrylic Refill",
+      "h": "Keeps your set looking newly done.",
+      "d": "Maintain the beauty and strength of your acrylic nails with a refreshing refill that keeps them looking newly done and perfectly shaped. Colour included.",
+      "o": [
+       {
+        "l": "Treatment",
+        "p": 80000
+       }
+      ]
+     },
+     {
+      "n": "Acrylic Removal",
+      "h": "Soaked off without damaging the natural nail.",
+      "d": "Your acrylics removed properly, taking the time to protect the natural nail underneath rather than forcing them off.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 40000
+       }
+      ]
+     },
+     {
+      "sec": "Finishing Touches"
+     },
+     {
+      "n": "Gel Nail Polish Application",
+      "h": "Gel polish on its own, without a manicure.",
+      "d": "Gel polish applied and cured on nails that are already prepared. If you want nail and cuticle care, a scrub and a massage as well, book the Gel Manicure instead.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 25000
+       }
+      ]
+     },
+     {
+      "n": "Gel Removal",
+      "h": "Gel soaked off safely.",
+      "d": "Existing gel removed carefully, keeping the surface of your natural nail intact.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 25000
+       }
+      ]
+     },
+     {
+      "n": "Regular Nail Polish Application",
+      "h": "Classic polish on its own, without a manicure.",
+      "d": "Regular polish applied in your chosen colour on nails that are already prepared. If you want the full hand care as well, book the Classic Manicure instead.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 15000
+       }
+      ]
+     },
+     {
+      "n": "Nail Art",
+      "h": "Priced per nail, so you choose how many.",
+      "d": "Hand-painted detail on as many nails as you like. Tell your technician what you have in mind and they will tell you what is possible in the time.",
+      "note": "Charged for each nail. Ten nails would be 50,000.",
+      "o": [
+       {
+        "l": "Per nail",
+        "p": 5000
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "waxing",
+  "label": "Waxing",
+  "groups": [
+   {
+    "id": "threading",
+    "label": "Threading",
+    "title": "Threading",
+    "blurb": "Precise shaping with thread, nothing applied to the skin.",
+    "items": [
+     {
+      "n": "Full Face Threading",
+      "h": "The whole face in one session.",
+      "d": "Brows, upper lip, chin, cheeks and jawline shaped and cleared in a single appointment.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 35000
+       }
+      ]
+     },
+     {
+      "n": "Upper Lip Threading",
+      "h": "Quick and precise.",
+      "d": "The upper lip cleared with thread, which suits sensitive skin better than wax.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 15000
+       }
+      ]
+     },
+     {
+      "n": "Eyebrow Threading",
+      "h": "Shaped to suit your face.",
+      "d": "Brows shaped with thread for a clean, precise line. We will discuss the shape with you before starting.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 15000
+       }
+      ]
+     },
+     {
+      "n": "Chin Threading",
+      "h": "Clean and quick.",
+      "d": "The chin and jawline cleared with thread.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 12000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "waxher",
+    "label": "Waxing (Her)",
+    "title": "Waxing (Her)",
+    "blurb": "Tailored treatments that shape, smooth, and enhance.",
+    "intro": {
+     "t": "Hygiene & comfort",
+     "b": "Premium waxes are chosen for different skin areas, with single use applicators and a strict no double-dipping policy."
+    },
+    "items": [
+     {
+      "n": "Full Body Wax",
+      "ctx": "Her",
+      "h": "Arms, legs, bikini, underarm, back, chest and more.",
+      "d": "A full body wax covering arms, legs, bikini, underarm, back, chest and the rest. Tell us at booking so we set aside enough time.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 200000
+       }
+      ]
+     },
+     {
+      "n": "Brazilian Wax",
+      "ctx": "Her",
+      "h": "Hollywood finish.",
+      "d": "A full bikini wax, finished Hollywood.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Chest",
+      "ctx": "Her",
+      "h": "Chest waxing.",
+      "d": "The chest area waxed clean.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Back",
+      "ctx": "Her",
+      "h": "Back waxing.",
+      "d": "The full back waxed clean, shoulders included.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Full Legs or Full Arms",
+      "ctx": "Her",
+      "h": "Full length, arms or legs.",
+      "d": "A full arm or a full leg wax. Choose which when you book.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Half Legs or Half Arms",
+      "ctx": "Her",
+      "h": "Lower half, arms or legs.",
+      "d": "A half arm or half leg wax, usually from the elbow or the knee down.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 40000
+       }
+      ]
+     },
+     {
+      "n": "Underarms",
+      "ctx": "Her",
+      "h": "Quick and thorough.",
+      "d": "Both underarms waxed clean.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 30000
+       }
+      ]
+     },
+     {
+      "n": "Bikini Line",
+      "ctx": "Her",
+      "h": "The edges tidied, nothing more.",
+      "d": "The bikini line tidied along the edges, leaving the rest as it is.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 25000
+       }
+      ]
+     },
+     {
+      "n": "Brow / Upper Lip / Chin",
+      "ctx": "Her",
+      "h": "Priced for each area.",
+      "d": "Brow, upper lip or chin waxed. Priced for each area, so tell us which you want.",
+      "o": [
+       {
+        "l": "Each area",
+        "p": 12000
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "waxhim",
+    "label": "Waxing (Him)",
+    "title": "Waxing (Him)",
+    "blurb": "Tailored treatments that shape, smooth, and enhance.",
+    "intro": {
+     "t": "Hygiene & comfort",
+     "b": "Premium waxes are chosen for different skin areas, with single use applicators and a strict no double-dipping policy."
+    },
+    "items": [
+     {
+      "n": "Full Body Wax",
+      "ctx": "Him",
+      "h": "Arms, legs, underarm, back, chest and more.",
+      "d": "A full body wax covering arms, legs, underarm, back, chest and the rest. Tell us at booking so we set aside enough time.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 250000
+       }
+      ]
+     },
+     {
+      "n": "Genital Wax",
+      "ctx": "Him",
+      "h": "Carried out in a private room.",
+      "d": "A full genital wax, carried out privately and with care.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 80000
+       }
+      ]
+     },
+     {
+      "n": "Chest",
+      "ctx": "Him",
+      "h": "Chest waxing.",
+      "d": "The chest area waxed clean.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Back",
+      "ctx": "Him",
+      "h": "Back waxing.",
+      "d": "The full back waxed clean, shoulders included.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Full Legs or Full Arms",
+      "ctx": "Him",
+      "h": "Full length, arms or legs.",
+      "d": "A full arm or a full leg wax. Choose which when you book.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 50000
+       }
+      ]
+     },
+     {
+      "n": "Half Legs or Half Arms",
+      "ctx": "Him",
+      "h": "Lower half, arms or legs.",
+      "d": "A half arm or half leg wax, usually from the elbow or the knee down.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 40000
+       }
+      ]
+     },
+     {
+      "n": "Underarms",
+      "ctx": "Him",
+      "h": "Quick and thorough.",
+      "d": "Both underarms waxed clean.",
+      "o": [
+       {
+        "l": "Service",
+        "p": 30000
+       }
+      ]
+     },
+     {
+      "n": "Brow / Upper Lip / Chin",
+      "ctx": "Him",
+      "h": "Priced for each area.",
+      "d": "Brow, upper lip or chin waxed. Priced for each area, so tell us which you want.",
+      "o": [
+       {
+        "l": "Each area",
+        "p": 12000
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
