@@ -1,6 +1,9 @@
 # Esper Salon & Spa — service menu
 
-Live page: https://muhammadhalai.github.io/esper-menu/
+Live page: **https://esper-spa.netlify.app/**
+
+Hosted on Netlify, which redeploys automatically on every push to `main`.
+Also mirrored at https://muhammadhalai.github.io/esper-menu/
 
 ## How this is put together
 
